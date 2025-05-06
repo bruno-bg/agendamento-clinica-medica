@@ -57,7 +57,7 @@ body {
     border-left: 4px solid #2980b9;
   }
   
-  /* 🔻 Responsivo para dispositivos menores (≤768px) */
+  /* Responsivo para dispositivos menores (≤768px) */
   @media (max-width: 768px) {
     .container {
       width: 100%;
@@ -83,7 +83,7 @@ body {
     }
   }
   
-  /* 📱 Extra: otimização para smartphones muito pequenos (≤480px) */
+  /* Extra: otimização para smartphones muito pequenos (≤480px) */
   @media (max-width: 480px) {
     h1 {
       font-size: 20px;
@@ -99,7 +99,7 @@ body {
     }
   }
   
-  /* 🔸 Tela intermediária entre 768px e 1024px */
+  /* Tela intermediária entre 768px e 1024px */
   @media (min-width: 769px) and (max-width: 1024px) {
     .container {
       width: 90%;
@@ -113,5 +113,67 @@ body {
     label {
       font-size: 16px;
     }
+  }
+  
+  /* Estilos do Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+  }
+  
+  .botoes-confirmacao {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .btn-confirmar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: 1;
+  }
+  
+  .btn-cancelar {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: 1;
+  }
+  
+  .btn-confirmar:hover {
+    background-color: #45a049;
+  }
+  
+  .btn-cancelar:hover {
+    background-color: #da190b;
+  }
+  
+  #dados-confirmacao {
+    margin: 20px 0;
+    line-height: 1.6;
   }
   
